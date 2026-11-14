@@ -42,7 +42,7 @@ const itemArray = [
     },
 
     {id:7,
-    image: "Keyboard.jpg",
+    image: "Keyboard.webp",
      name: "Keyboard",
      price: 5000,
      button: "Add to Cart"
