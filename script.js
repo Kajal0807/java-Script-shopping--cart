@@ -93,8 +93,9 @@ itemCard.forEach((card)=>{
 })
 
 cardContainer.addEventListener('click',(event)=>{
-    event.target.closest(".add-to.cart");
-  const card=  event.target.closest(".card");
+   const targetBtn= event.target.closest(".add-to.cart");
+    if(targetBtn){
+  const card=  targetBtn.closest(".card");
    const image = card.dataset.image;
     const name = card.dataset.name;
     const price = card.dataset.price;
@@ -108,7 +109,7 @@ cardContainer.addEventListener('click',(event)=>{
     };
    cartArray.push(Product); 
     showCart();
-
+    }
    
 });
 
